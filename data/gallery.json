@@ -1,0 +1,10 @@
+[
+  { "src": "images/gallery-1.jpg", "alt": "Cabina de masaje", "tag": "cabina" },
+  { "src": "images/gallery-2.jpg", "alt": "Zona de descanso", "tag": "cabina" },
+  {
+    "src": "images/gallery-3.jpg",
+    "alt": "Detalles del espacio",
+    "tag": "detalles"
+  },
+  { "src": "images/gallery-4.jpg", "alt": "Materiales", "tag": "detalles" }
+]

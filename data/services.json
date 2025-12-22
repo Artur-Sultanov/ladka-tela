@@ -1,0 +1,29 @@
+[
+  {
+    "id": "relajante-60",
+    "category": "Relajación",
+    "name": "Masaje relajante",
+    "description": "Reduce el estrés, ayuda a dormir mejor y mejora el bienestar general.Reduce el estrés, ayuda a dormir mejor y mejora el bienestar general.Reduce el estrés, ayuda a dormir mejor y mejora el bienestar general.Reduce el estrés, ayuda a dormir mejor y mejora el bienestar general.Reduce el estrés, ayuda a dormir mejor y mejora el bienestar general.",
+    "durationMin": 60,
+    "durationLabel": "60 min",
+    "price": "40 €"
+  },
+  {
+    "id": "deportivo-60",
+    "category": "Deportivo",
+    "name": "Masaje deportivo",
+    "description": "Preparación y recuperación muscular. Ideal para entrenamiento y sobrecargas.",
+    "durationMin": 60,
+    "durationLabel": "60 min",
+    "price": "45 €"
+  },
+  {
+    "id": "deportivo-90",
+    "category": "Deportivo",
+    "name": "Masaje deportivo (profundo)",
+    "description": "Sesión más completa para zonas extensas y trabajo profundo.",
+    "durationMin": 90,
+    "durationLabel": "90 min",
+    "price": "65 €"
+  }
+]

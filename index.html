@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Artur Ladka | Masaje profesional en Granada</title>
+    <meta
+      name="description"
+      content="Masaje profesional en Granada. Relajante, terapéutico y deportivo. Reserva tu sesión con Artur Ladka."
+    />
+
+    <!-- Canonical: поправишь после публикации -->
+    <link rel="canonical" href="https://USERNAME.github.io/REPO_NAME/" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Artur Ladka | Masaje profesional en Granada"
+    />
+    <meta
+      property="og:description"
+      content="Sesiones de masaje en Granada. Reserva fácil por WhatsApp o teléfono."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/hero.jpg" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    
+    <!-- Favicon -->
+<link rel="icon" href="favicon.ico" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav container" aria-label="Navegación principal">
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">Artur Ladka</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a class="nav-link" href="#home">Inicio</a></li>
+          <li><a class="nav-link" href="#services">Servicios</a></li>
+          <li><a class="nav-link" href="#gallery">Galería</a></li>
+          <li><a class="nav-link" href="#about">Sobre mí</a></li>
+          <li><a class="nav-link" href="#reviews">Opiniones</a></li>
+          <li><a class="nav-link" href="#contact">Contacto</a></li>
+        </ul>
+
+        <a class="btn btn-small btn-solid" href="#contact">Reservar</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="kicker">Masaje en Granada</p>
+            <h1>Bienestar, recuperación y equilibrio corporal</h1>
+            <p class="lead">
+              Sesiones adaptadas a tus necesidades: relajante, terapéutico y
+              deportivo.
+            </p>
+
+            <div class="cta-row">
+              <a class="btn btn-solid" href="#contact">Reservar cita</a>
+              <a class="btn btn-ghost" href="#services">Ver servicios</a>
+            </div>
+
+            <div class="stats">
+              <div class="stat">
+                <strong>1:1</strong>
+                <span>Atención personalizada</span>
+              </div>
+              <div class="stat">
+                <strong>60–90 min</strong>
+                <span>Duraciones flexibles</span>
+              </div>
+              <div class="stat">
+                <strong>Granada</strong>
+                <span>Ubicación local</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-media" aria-label="Video del espacio de masaje">
+  <video
+    class="hero-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata"
+    poster="images/hero.jpg"
+  >
+    <source src="video/hero.mp4" type="video/mp4" />
+  </video>
+</div>
+
+            <!-- background-image via CSS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- NEXT SLOT (как у преподавателя “próximo concierto”) -->
+      <section class="highlight">
+        <div class="container highlight-card">
+          <div>
+            <p class="highlight-title">Próxima disponibilidad</p>
+            <p class="highlight-text">
+              Reserva tu sesión y elige la duración que mejor se adapte a ti.
+            </p>
+          </div>
+          <a class="btn btn-solid" href="#contact">Reservar ahora</a>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section id="services" class="section">
+        <div class="container section-head">
+          <h2>Servicios</h2>
+          <p>
+            Elige el tipo de masaje según tu objetivo: relajación, terapia o
+            rendimiento.
+          </p>
+        </div>
+        <div
+          class="container cards"
+          id="services-list"
+          aria-live="polite"
+        ></div>
+      </section>
+
+      <!-- GALLERY -->
+      <section id="gallery" class="section">
+        <div class="container section-head">
+          <h2>Galería</h2>
+          <p>Fotos del espacio (ejemplo). Filtra por categoría.</p>
+        </div>
+
+        <div
+          class="container filter-row"
+          id="gallery-filters"
+          aria-label="Filtros de galería"
+        >
+          <!-- buttons injected by JS -->
+        </div>
+
+        <div
+          class="container gallery-grid"
+          id="gallery-grid"
+          aria-live="polite"
+        ></div>
+      </section>
+
+      <!-- Lightbox -->
+      <div
+        class="lightbox"
+        id="lightbox"
+        aria-hidden="true"
+        role="dialog"
+        aria-label="Vista de imagen"
+      >
+        <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar">
+          ×
+        </button>
+        <button class="lightbox-prev" id="lightbox-prev" aria-label="Anterior">
+          ‹
+        </button>
+        <img class="lightbox-img" id="lightbox-img" alt="" />
+        <button class="lightbox-next" id="lightbox-next" aria-label="Siguiente">
+          ›
+        </button>
+      </div>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="container split">
+          <div>
+            <h2>Sobre mí</h2>
+            <p>
+              Soy <strong>Artur Ladka</strong>, masajista en Granada. Mi enfoque
+              combina técnicas terapéuticas y de relajación para ayudarte a
+              sentirte mejor.
+            </p>
+            <ul class="checklist">
+              <li>Evaluación rápida antes de la sesión</li>
+              <li>Enfoque por zonas y objetivos</li>
+              <li>Recomendaciones básicas post-sesión</li>
+            </ul>
+          </div>
+          <div class="about-media">
+            <img
+              src="images/hero.jpg"
+              alt="Espacio de masaje (imagen de ejemplo)"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- REVIEWS -->
+      <section id="reviews" class="section section-muted">
+        <div class="container section-head">
+          <h2>Opiniones</h2>
+          <p>
+            Experiencias reales de clientes (por ahora en formato estático).
+          </p>
+        </div>
+
+        <div
+          class="container reviews"
+          id="reviews-list"
+          aria-live="polite"
+        ></div>
+
+        <div class="container note-row">
+          <p class="note">
+            Para recibir opiniones públicas, lo habitual es enlazar con Google
+            Reviews. Lo añadiremos en una siguiente iteración.
+          </p>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="container split">
+          <div>
+            <h2>Contacto y reservas</h2>
+            <p>
+              Reserva por WhatsApp/Telegram, llamada o email. Respondo lo antes
+              posible.
+            </p>
+
+            <div class="contact-cards">
+              <a class="contact-card" href="#" aria-disabled="true">
+                <span class="contact-label">WhatsApp</span>
+                <span class="contact-value muted">próximamente</span>
+              </a>
+
+              <a class="contact-card" href="#" aria-disabled="true">
+                <span class="contact-label">Teléfono</span>
+                <span class="contact-value muted">próximamente</span>
+              </a>
+
+              <a class="contact-card" href="mailto:example@email.com">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">example@email.com</span>
+              </a>
+
+              <a class="contact-card" href="#" aria-disabled="true">
+                <span class="contact-label">Telegram</span>
+                <span class="contact-value muted">próximamente</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-side">
+            <div class="contact-panel">
+              <h3>Ubicación</h3>
+              <p><strong>Granada</strong></p>
+              <p class="muted">
+                Dirección exacta se facilita al confirmar la cita.
+              </p>
+
+              <div class="divider"></div>
+
+              <h3>Horario</h3>
+              <p class="muted">Se indicará próximamente</p>
+
+              <a class="btn btn-solid btn-full" href="mailto:example@email.com"
+                >Solicitar cita por email</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <p>© 2025 Artur Ladka · Granada</p>
+        <a class="to-top" href="#top">Volver arriba ↑</a>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
