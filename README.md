@@ -46,10 +46,8 @@ Key focus areas:
 - Optimized media assets for fast loading
 - Custom favicon and metadata
 
----
-
 ## 📂 Project Structure
-
+```
 massage-landing-page/
 ├── css/
 │ └── styles.css
@@ -65,11 +63,7 @@ massage-landing-page/
 │ └── hero.mp4
 ├── index.html
 └── README.md
-
-yaml
-Копировать код
-
----
+```
 
 ## 🚀 Deployment
 
